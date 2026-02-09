@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieTrix</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #141414; color: white; }
+        .card { background-color: #2f2f2f; border: none; color: white; height: 100%; }
+        .movie-poster { border-radius: 8px 8px 0 0; }
+    </style>
+</head>
+<body>
+    
+
+
+    <nav class="navbar navbar-dark bg-dark mb-4 ">
+        <div class="container">
+            <a class="navbar-brand " href="#" id="Movie">MovieTrix</a>
+            <form class="d-flex" id="searchForm">
+                <input class="form-control me-2" type="search" id="searchInput" placeholder="Search movies...">
+                <button class="btn btn-outline-danger" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container text-center ">
+    <div id="loader" class="spinner-border text-danger my-5" role="status" style="display: none;">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <div id="movieGrid" class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+    </div>
+</div>
+
+
+    <div id="movieGrid" class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+        </div>
+</div>
+
+    <div class="container">
+        <div class="row" id="movieGrid" class="row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+            </div>
+    </div>
+
+    <div class="container-fluid py-5 mb-5 text-center" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-position: center;">
+    <div class="py-5">
+        <h1 class="display-3 fw-bold text-danger">Want to watch movies?</h1>
+        <p class="fs-4 mb-4">Explore the latest trending films and find your next favorite.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-danger btn-lg px-4 gap-3">Browse Popular</button>
+            <button type="button" class="btn btn-outline-light btn-lg px-4">Watch Trailer</button>
+        </div>
+    </div>
+</div>
+
+
+<footer class="py-5 mt-5 border-top border-secondary text-center text-secondary">
+    <div class="container">
+        <p>&copy; 2026 MovieTrix Project. Powered by TMDB API.</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="text-secondary text-decoration-none">Privacy Policy</a>
+            <a href="#" class="text-secondary text-decoration-none">Terms of Service</a>
+            <a href="#" class="text-secondary text-decoration-none">Contact Us</a>
+        </div>
+    </div>
+</footer>
+
+
+    
+    <script src="script.js"></script>
+
+    <script>
+        console.log("Page loaded!");
+    </script>
+
+</body>
+</html>
